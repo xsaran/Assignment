@@ -1,0 +1,239 @@
+/*Author: Sarandeep Singh
+Date: 24th May, 2023
+Version: 1.0.0
+Css file content*/
+
+/* Css is applied */
+* {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  margin: 0;
+}
+main {
+  margin-bottom: 100px;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+ul li a {
+  margin-top: 15px;
+}
+.container {
+  padding: 10px 20px;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Css for Text */
+.text-justify {
+  text-align: justify;
+}
+
+.text-center {
+  text-align: center;
+}
+
+figcaption {
+  text-align: justify;
+}
+
+.m-auto {
+  margin: auto;
+}
+.p-0 {
+  padding: 0px;
+}
+/* Css for Rows and Columns */
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+.col {
+  padding: 1rem;
+  text-align: center;
+}
+
+.col-1 {
+  grid-column: span 1;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
+.col-6 {
+  grid-column: span 6;
+}
+
+.col-7 {
+  grid-column: span 7;
+}
+
+.col-8 {
+  grid-column: span 8;
+}
+
+.col-9 {
+  grid-column: span 9;
+}
+
+.col-10 {
+  grid-column: span 10;
+}
+
+.col-11 {
+  grid-column: span 11;
+}
+
+.col-12 {
+  grid-column: span 12;
+}
+/* Navbar Css */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background: linear-gradient(to right, #FFE0DF, red);
+}
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+.nav-list li {
+  margin: 0 10px;
+}
+.nav-list li a {
+  color:white;
+}
+
+/* CSS for Footer */
+footer {
+  position: fixed;
+  height: 80px;
+  bottom: 0;
+  width: 100%;
+  padding: 30px 0;
+  color: grey;
+  font-size: 18px;
+  text-align: center;
+  background: linear-gradient(to right, #FFE0DF, red);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.footer-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+.heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px 10px;
+  padding: 10px;
+}
+/* Css for Unordered list */
+ul li {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+button {
+  color: white !important;
+  background-color: darkblue;
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+}
+button a {
+  color: white;
+}
+figure div img {
+  height: 150px;
+  width: 150px;
+}
+img {
+  width: 300px;
+  height: 300px;
+}
+/* Small device (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  img {
+    width: 350px;
+    height: 300px;
+  }
+  .col-8 {
+    grid-column: span 12;
+  }
+  .col-4 {
+    grid-column: span 12;
+  }
+  figcaption {
+    font-size: 14px;
+  }
+}
+/* Mid sized (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  figure div img {
+    height: 150px;
+    width: 150px;
+  }
+  img {
+    height: 1450px;
+    width: 1450px;
+  }
+  audio {
+    width: 190px;
+  }
+}
+
+/* Mid sized (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  img {
+    height: 170px;
+    width: 170px;
+  }
+  audio {
+    width: 190px;
+  }
+}
